@@ -61,7 +61,7 @@ Recommendations
 Project Files
 
 - [Jupyter Notebook](https://github.com/Blessing123-del/OIBSIP/blob/main/DataAnalytics-L1-EDARetailSales/EDA%20RETAIL%20SALES.ipynb)
-- [Dataset] 
+- [Dataset](https://github.com/Blessing123-del/OIBSIP/blob/main/DataAnalytics-L1-EDARetailSales/realistic_e_commerce_sales_data.csv)
 - [Screenshots](./screenshots/)
 
 This exploratory data analysis demonstrates how retail sales data can be transformed into meaningful business insights. The analysis provides a better understanding of customer purchasing behavior, product performance, sales trends, and shipping performance, helping support data-driven business decisions.
