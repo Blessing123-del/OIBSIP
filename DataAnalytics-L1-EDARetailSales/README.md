@@ -60,7 +60,7 @@ Recommendations
 
 Project Files
 
-- [Jupyter Notebook](./Retail_Sales_EDA.ipynb)
+- [Jupyter Notebook](https://github.com/Blessing123-del/OIBSIP/blob/main/DataAnalytics-L1-EDARetailSales/EDA%20RETAIL%20SALES.ipynb)
 - [Dataset](./realistic_e_commerce_sales_data.csv)
 - [Screenshots](./screenshots/)
 
