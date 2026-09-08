@@ -60,10 +60,8 @@ Recommendations
 
 Project Files
 
-- "Retail_Sales_EDA.ipynb" — Jupyter Notebook containing the complete analysis.
-- "dataset.csv" — Dataset used for the analysis.
-- "screenshots/" — Selected charts and output screenshots from the project.
-
-Conclusion
+- [Jupyter Notebook](./Retail_Sales_EDA.ipynb)
+- [Dataset](./realistic_e_commerce_sales_data.csv)
+- [Screenshots](./screenshots/)
 
 This exploratory data analysis demonstrates how retail sales data can be transformed into meaningful business insights. The analysis provides a better understanding of customer purchasing behavior, product performance, sales trends, and shipping performance, helping support data-driven business decisions.
