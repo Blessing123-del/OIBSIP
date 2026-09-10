@@ -129,7 +129,7 @@ DataAnalytics-L1-EDARetailSales/
 
 ## 👤 Author
 
-**Blessing**
+**Amula Blessing Peresuwode**
 
 **Data Analyst Intern — Oasis Infobyte**
 
