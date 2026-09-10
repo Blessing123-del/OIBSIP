@@ -114,9 +114,10 @@ Total transaction value aggregated across order fulfillment stages:
 ## 📁 Repository Structure
 
 DataAnalytics-L1-EDARetailSales/
-
+│
 ├── screenshots/
-   └── [project visualizations]
+│   └── project visualizations
+│
 ├── EDA RETAIL SALES.ipynb
 ├── README.md
 └── retail_sales_dataset.csv
