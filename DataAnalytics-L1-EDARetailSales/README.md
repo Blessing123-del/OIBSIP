@@ -111,8 +111,10 @@ Total transaction value aggregated across order fulfillment stages:
 * **Standardize Order Tracking:** Investigate orders categorized under `Unknown` status and improve tracking integration with logistics providers.
 
 ---
+
 ## 📁 Repository Structure
 
+```text
 DataAnalytics-L1-EDARetailSales/
 │
 ├── screenshots/
@@ -122,7 +124,6 @@ DataAnalytics-L1-EDARetailSales/
 ├── README.md
 └── retail_sales_dataset.csv
 
----
 
 ## 👤 Author
 
