@@ -111,7 +111,7 @@ Total transaction value aggregated across order fulfillment stages:
 * **Standardize Order Tracking:** Investigate orders categorized under `Unknown` status and improve tracking integration with logistics providers.
 
 ---
-📁 Repository Structure
+## 📁 Repository Structure
 
 DataAnalytics-L1-EDARetailSales/
 
@@ -136,5 +136,4 @@ DataAnalytics-L1-EDARetailSales/
 **Data Analyst Intern — Oasis Infobyte**
 
 **Skills demonstrated:** Python • Pandas • NumPy • Matplotlib • Seaborn • Exploratory Data Analysis
-## 📁 Repository Structure
 
