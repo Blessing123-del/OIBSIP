@@ -184,12 +184,10 @@ The resulting customer profiles provide a foundation for more targeted marketing
 
 ```text
 DataAnalytics-L1-CustomerSegmentationAnalysis/
-│
+│── screenshots/
+│   └── project_visualizations.png
 ├── customer_segmentation.ipynbOnline_Retail.csv
 ├── Online_Retail.csv
-├── screenshots/
-│   └── project_visualizations.png
-│
 └── README.md
 ```
 
