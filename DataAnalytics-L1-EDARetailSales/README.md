@@ -1,67 +1,136 @@
+# Retail Sales Exploratory Data Analysis (EDA)
 
-Retail Sales Data Analysis — Exploratory Data Analysis (EDA)
+**Oasis Infobyte Data Analytics Internship — Task 1, Level 1**
 
-Project Overview
+---
 
-This project explores a transactional dataset from an e-commerce platform covering product categories such as Electronics, Wearables, and Accessories. The analysis investigates customer demographics, purchasing patterns, shipping status, and overall revenue trends.
+## 📌 Project Overview
 
-Task 1 — Level 1
-Role: Data Analyst Intern
-Organization: Oasis Infobyte
+This project performs an Exploratory Data Analysis (EDA) on an e-commerce retail sales dataset. The analysis explores customer demographics, product categories, order quantities, sales revenue, shipping status, and purchasing patterns.
 
-Project Aim
+The goal of this project is to clean the raw transactional dataset, examine underlying data distributions, identify meaningful purchasing patterns, and produce actionable insights to support marketing, inventory management, and logistics decisions.
 
-The aim of this project is to uncover key sales patterns and generate data-driven insights that can support marketing strategies, inventory planning, and business decision-making.
+---
 
-Objectives
+## 🎯 Project Objectives
 
-- Identify top-performing products and categories.
-- Analyze purchasing patterns by age and gender.
-- Evaluate monthly and quarterly sales trends.
-- Assess sales performance by shipping status.
-- Identify important patterns and trends within the dataset.
+* Explore overall customer purchasing patterns.
+* Analyze sales and revenue generation across product categories.
+* Examine demographic buying behavior across age groups and gender.
+* Analyze order quantities, unit prices, and total basket value.
+* Investigate shipping status distribution and operational order fulfillment.
+* Uncover operational bottlenecks and commercial trends in retail performance.
 
-Data Analysis Process
+---
 
-- Loaded the dataset using Pandas.
-- Checked the dataset structure and data types.
-- Handled missing values and duplicates.
-- Performed descriptive statistical analysis.
-- Conducted exploratory data analysis (EDA).
-- Created visualizations using Matplotlib and Seaborn.
-- Interpreted the results and developed business recommendations.
+## 🛠️ Tools & Technologies
 
-Tools & Technologies
+* **Language:** Python
+* **Environment:** Jupyter Notebook
+* **Data Manipulation & Analysis:** Pandas, NumPy
+* **Data Visualization:** Matplotlib, Seaborn
 
-- Python
-- Jupyter Notebook
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+---
 
-Key Findings
+## 📊 Dataset & Features
 
-📌 Top Performers: Electronics recorded strong sales performance and should be prioritized for marketing and inventory planning.
+The dataset contains **1,000 retail transactions** detailing customer profiles, product metrics, and order fulfillment status.
 
-📌 Customer Insights: Purchasing patterns varied across different age groups and genders, providing opportunities for more targeted marketing campaigns.
+| Column            | Description                                                     |
+| :---------------- | :-------------------------------------------------------------- |
+| `Customer ID`     | Unique customer identifier                                      |
+| `Gender`          | Gender of the customer                                          |
+| `Region`          | Geographic region of the customer                               |
+| `Age`             | Customer age                                                    |
+| `Product Name`    | Name of the purchased item                                      |
+| `Category`        | Department classification (Electronics, Wearables, Accessories) |
+| `Unit Price`      | Price per single unit                                           |
+| `Quantity`        | Number of units purchased                                       |
+| `Total Price`     | Total transaction value (`Unit Price` × `Quantity`)             |
+| `Shipping Fee`    | Cost of shipping for the order                                  |
+| `Shipping Status` | Fulfillment state (In Transit, Returned, Delivered, Unknown)    |
+| `Order Date`      | Date of the transaction                                         |
 
-📌 Sales Trends: Monthly and quarterly analysis revealed changes in sales performance over time and helped identify important revenue patterns.
+---
 
-📌 Fulfillment: Shipping status analysis provided insights into order fulfillment and highlighted the importance of monitoring delivery performance.
+## 🧹 Data Cleaning & Preparation
 
-Recommendations
+The raw dataset was audited and preprocessed to ensure data quality before exploratory analysis:
 
-- Prioritize high-performing product categories for marketing and inventory planning.
-- Use customer demographic patterns to develop more targeted marketing campaigns.
-- Monitor monthly and quarterly sales trends to support better sales forecasting.
-- Monitor shipping performance to reduce delays and improve customer satisfaction.
-- Use sales data to support data-driven inventory and business decisions.
+1. **Inspection:** Reviewed the data structure using `.shape`, `.info()`, and `.describe()`.
+2. **Missing Values:** Identified missing records in `Region`, `Age`, and `Shipping Status` and handled them appropriately.
+3. **Data Type Casting:** Converted `Order Date` into a standard datetime format for time-series analysis.
+4. **Data Integrity:** Checked for duplicate transactions, inconsistent entries, and potential outliers in price and quantity distributions.
+5. **Final Validation:** Confirmed that no remaining null values were present across the analyzed fields.
 
-Project Files
+---
 
-- [Jupyter Notebook](https://github.com/Blessing123-del/OIBSIP/blob/main/DataAnalytics-L1-EDARetailSales/EDA%20RETAIL%20SALES.ipynb)
-- [Dataset](https://github.com/Blessing123-del/OIBSIP/blob/main/DataAnalytics-L1-EDARetailSales/realistic_e_commerce_sales_data.csv)
-- [Screenshots](./screenshots/)
+## 📈 Exploratory Data Analysis & Key Findings
 
-This exploratory data analysis demonstrates how retail sales data can be transformed into meaningful business insights. The analysis provides a better understanding of customer purchasing behavior, product performance, sales trends, and shipping performance, helping support data-driven business decisions.
+### 1. Revenue by Product Category
+
+* **Electronics** dominated total revenue, generating **1,200,500** and significantly outperforming the other categories.
+* **Wearables** generated **74,200**.
+* **Accessories** generated **71,900**.
+* **Takeaway:** Electronics was the primary revenue driver, accounting for approximately **89% of total revenue**.
+
+### 2. Customer Demographics
+
+* **Age Distribution:** Customers aged **56–65** recorded the highest representation and transaction volume, while the **under-18** bracket had the lowest activity.
+* **Gender Analysis:** Male customers recorded higher total purchasing activity and order volume compared with female customers.
+
+### 3. Summary Statistics
+
+* **Average Customer Age:** 46.93 years
+* **Average Unit Price:** 457.70
+* **Average Basket Quantity:** 3.01 units
+* **Average Order Value (Total Price):** 1,346.60
+* **Average Shipping Fee:** 12.42
+
+### 4. Shipping & Fulfillment Breakdown
+
+Total transaction value aggregated across order fulfillment stages:
+
+* **In Transit:** 443,560
+
+* **Returned:** 415,640
+
+* **Delivered:** 407,380
+
+* **Unknown:** 80,020
+
+* **Critical Finding:** The total value of **Returned** items (415,640) was slightly higher than the total value of **Delivered** goods (407,380), highlighting a potential operational risk that warrants further investigation.
+
+---
+
+## 💡 Business Recommendations
+
+* **Prioritize High-Revenue Inventory:** Allocate procurement capital and safety stock primarily to the **Electronics** category given its overwhelming revenue contribution.
+* **Refine Demographic Targeting:** Develop targeted marketing campaigns based on the purchasing patterns of the **56–65 age group** and male customers, while testing suitable promotional strategies for younger demographics.
+* **Investigate Returns:** Conduct an operational review to understand why returned transaction value was comparable to delivered transaction value. Potential areas to investigate include product quality, delivery delays, and product-description mismatches.
+* **Standardize Order Tracking:** Investigate orders categorized under `Unknown` status and improve tracking integration with logistics providers.
+
+---
+
+## 📁 Repository Structure
+
+```text
+DataAnalytics-L1-EDARetailSales/
+│
+├── retail_sales_eda.ipynb
+├── retail_sales_dataset.csv
+├── screenshots/
+│   └── project_visualizations.png
+│
+└── README.md
+```
+
+---
+
+## 👤 Author
+
+**Blessing**
+
+**Data Analyst Intern — Oasis Infobyte**
+
+**Skills demonstrated:** Python • Pandas • NumPy • Matplotlib • Seaborn • Exploratory Data Analysis
