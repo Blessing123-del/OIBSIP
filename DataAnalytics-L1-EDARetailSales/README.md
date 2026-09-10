@@ -119,7 +119,7 @@ DataAnalytics-L1-EDARetailSales/
 
 ├── screenshots/
 
-│   └── [project screenshots]
+│   └── [project Visualization]
 
 ├── EDA RETAIL SALES.ipynb
 
