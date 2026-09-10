@@ -186,7 +186,7 @@ The resulting customer profiles provide a foundation for more targeted marketing
 DataAnalytics-L1-CustomerSegmentationAnalysis/
 │── screenshots/
 │   └── project_visualizations.png
-├── customer_segmentation.ipynbOnline_Retail.csv
+├── customer_segmentation.ipynb
 ├── Online_Retail.csv
 └── README.md
 ```
