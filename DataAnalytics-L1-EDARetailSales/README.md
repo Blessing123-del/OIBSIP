@@ -117,13 +117,11 @@ Total transaction value aggregated across order fulfillment stages:
 ```text
 DataAnalytics-L1-EDARetailSales/
 │
-├── retail_sales_eda.ipynb
-├── retail_sales_dataset.csv
 ├── screenshots/
-│   └── project_visualizations.png
-│
-└── README.md
-```
+│   └── [project screenshots]
+├── EDA RETAIL SALES.ipynb
+├── README.md
+└── retail_sales_dataset.csv
 
 ---
 
