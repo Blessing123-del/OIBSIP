@@ -125,8 +125,6 @@ DataAnalytics-L1-EDARetailSales/
 └── retail_sales_dataset.csv
 
 
-
-
 ## 👤 Author
 
 **Amula Blessing Peresuwode**
