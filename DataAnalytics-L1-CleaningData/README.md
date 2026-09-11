@@ -1,4 +1,3 @@
-Yes — here is the **corrected full README.md**, with your full name **Amula Blessing Peresuwode** included.
 
 # 🚢 Titanic Data Cleaning
 
