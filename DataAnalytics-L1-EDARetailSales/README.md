@@ -114,12 +114,6 @@ Total transaction value aggregated across order fulfillment stages:
 
 ## 📁 Repository Structure
 
-Put only the repository structure inside the code block, then keep the author section below it:
-
-```markdown
-## Repository Structure
-
-```text
 DataAnalytics-L1-EDARetailSales/
 │
 ├── screenshots/
