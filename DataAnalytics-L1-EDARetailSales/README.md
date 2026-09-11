@@ -1,7 +1,8 @@
-Retail Sales Exploratory Data Analysis (EDA)
+📊 RETAIL SALES EXPLORATORY DATA ANALYSIS (EDA)
 
-Oasis Infobyte Data Analytics Internship — Task 1, Level 1
+🚀 Oasis Infobyte Data Analytics Internship
 
+Task 1 — Level 1
 ---
 
 📌 Project Overview
