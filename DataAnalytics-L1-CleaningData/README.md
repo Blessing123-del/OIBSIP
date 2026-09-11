@@ -105,9 +105,6 @@ DataAnalytics-L1-CleaningData/
 
 ---
 
-## 📸 Project Screenshots
-
-Screenshots of important stages and outputs from the project are available in the `screenshots` folder.
 
 ---
 
