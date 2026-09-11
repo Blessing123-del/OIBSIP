@@ -114,6 +114,11 @@ Total transaction value aggregated across order fulfillment stages:
 
 ## 📁 Repository Structure
 
+Put only the repository structure inside the code block, then keep the author section below it:
+
+```markdown
+## Repository Structure
+
 ```text
 DataAnalytics-L1-EDARetailSales/
 │
@@ -123,7 +128,7 @@ DataAnalytics-L1-EDARetailSales/
 ├── EDA RETAIL SALES.ipynb
 ├── README.md
 └── retail_sales_dataset.csv
-
+```
 
 ## 👤 Author
 
@@ -132,3 +137,4 @@ DataAnalytics-L1-EDARetailSales/
 **Data Analyst Intern — Oasis Infobyte**
 
 **Skills demonstrated:** Python • Pandas • NumPy • Matplotlib • Seaborn • Exploratory Data Analysis
+```
