@@ -132,4 +132,3 @@ DataAnalytics-L1-EDARetailSales/
 **Data Analyst Intern — Oasis Infobyte**
 
 **Skills demonstrated:** Python • Pandas • NumPy • Matplotlib • Seaborn • Exploratory Data Analysis
-
