@@ -181,9 +181,9 @@ DataAnalytics-L1-CleaningData/
 │
 ├── README.md
 ├── Data_Cleaning.ipynb
-├── messy_dataset.csv
+├── Titanic_dataset.csv
 ├── cleaned_dataset.csv
-└── screenshots/
+└── screenshots
 
 ---
 
