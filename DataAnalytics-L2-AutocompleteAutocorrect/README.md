@@ -31,7 +31,7 @@ Text Corpus: Alice’s Adventures in Wonderland by Lewis Carroll
 
 Source: Project Gutenberg
 
-"Project Gutenberg — Alice’s Adventures in Wonderland" (https://reference-url-citation.invalid/0)
+"Project Gutenberg — Alice’s Adventures in Wonderland" (https://www.gutenberg.org/files/11/11-h/11-h.htm)
 
 The text is used as the language corpus for training and testing the autocomplete and autocorrect approaches.
 
