@@ -1,12 +1,12 @@
-💳 Credit Card Fraud Detection
+# 💳 Credit Card Fraud Detection
 
-Oasis Infobyte Data Analytics Internship — Task 3, Level 2
+### Oasis Infobyte Data Analytics Internship — Task 3, Level 2
 
 ---
 
-📌 Project Overview
+## 📌 Project Overview
 
-This project focuses on detecting fraudulent credit card transactions using machine learning.
+This project focuses on detecting **fraudulent credit card transactions** using machine learning.
 
 Credit card fraud detection is a challenging classification problem because fraudulent transactions represent only a very small portion of all transactions.
 
@@ -14,7 +14,7 @@ The project explores the transaction data, addresses the class imbalance problem
 
 ---
 
-🎯 Objectives
+## 🎯 Objectives
 
 - Explore the credit card transaction dataset
 - Understand the distribution of fraudulent and legitimate transactions
@@ -29,7 +29,7 @@ The project explores the transaction data, addresses the class imbalance problem
 
 ---
 
-🛠️ Tools & Technologies
+## 🛠️ Tools & Technologies
 
 - Python
 - Pandas
@@ -41,21 +41,29 @@ The project explores the transaction data, addresses the class imbalance problem
 
 ---
 
-📊 Dataset
+## 📊 Dataset
 
-The project uses a credit card transaction dataset containing anonymised transaction features and a target variable indicating whether a transaction was fraudulent.
+The project uses the **Credit Card Fraud Detection Dataset**, which contains anonymised credit card transaction features and a target variable indicating whether a transaction was fraudulent.
 
 The dataset contains:
 
-- 284,807 transactions
-- 492 fraudulent transactions
+- **284,807 transactions**
+- **492 fraudulent transactions**
 - Highly imbalanced classes
 
 This imbalance makes fraud detection different from ordinary classification problems because a model can achieve high accuracy while still failing to detect fraudulent transactions.
 
+### 🔗 Dataset Source
+
+The dataset was obtained from Kaggle:
+
+**[Credit Card Fraud Detection Dataset — Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)**
+
+Due to the large size of the dataset, the raw `creditcard.csv` file is **not included in this GitHub repository**. It was downloaded and used locally for the analysis.
+
 ---
 
-🔍 Exploratory Data Analysis
+## 🔍 Exploratory Data Analysis
 
 The dataset was explored to understand:
 
@@ -69,11 +77,11 @@ Visualisations were used to highlight the significant imbalance between fraudule
 
 ---
 
-⚠️ Class Imbalance
+## ⚠️ Class Imbalance
 
 Fraudulent transactions represent only a very small percentage of the dataset.
 
-Because of this, accuracy alone is not a reliable measure of model performance.
+Because of this, **accuracy alone is not a reliable measure of model performance**.
 
 For example, a model could predict almost every transaction as legitimate and still achieve very high accuracy while detecting very few fraudulent transactions.
 
@@ -86,43 +94,44 @@ Therefore, this project focuses on:
 
 ---
 
-🤖 Machine Learning
+## 🤖 Machine Learning
 
 A classification approach was used to distinguish fraudulent transactions from legitimate ones.
 
-The data was divided into training and testing sets using a stratified split to preserve the distribution of fraudulent transactions.
+The data was divided into training and testing sets using a **stratified split** to preserve the distribution of fraudulent transactions.
 
 Class imbalance was considered during model development because correctly identifying fraudulent transactions is more important than simply maximising overall accuracy.
 
 ---
 
-📈 Model Evaluation
+## 📈 Model Evaluation
 
 The model was evaluated using several metrics.
 
-Logistic Regression Results
+### Logistic Regression Results
 
-Metric| Score
-Precision| 0.13
-Recall| 0.90
-F1-Score| 0.23
-ROC-AUC| 0.976
+| Metric | Score |
+|---|---:|
+| Precision | 0.13 |
+| Recall | 0.90 |
+| F1-Score | 0.23 |
+| ROC-AUC | 0.976 |
 
-The model achieved a high recall of 0.90, meaning it was able to identify a large proportion of fraudulent transactions.
+The model achieved a high **recall of 0.90**, meaning it was able to identify a large proportion of fraudulent transactions.
 
 However, its lower precision indicates that some legitimate transactions were also classified as fraudulent.
 
 ---
 
-⚖️ Precision vs Recall
+## ⚖️ Precision vs Recall
 
 Fraud detection requires a balance between precision and recall.
 
-High Recall
+### High Recall
 
 High recall is important because missing a fraudulent transaction can result in financial loss.
 
-High Precision
+### High Precision
 
 High precision is also important because incorrectly flagging legitimate transactions can inconvenience customers and require additional verification.
 
@@ -130,38 +139,38 @@ Therefore, the ideal fraud detection system should balance both objectives accor
 
 ---
 
-📊 Evaluation Metrics
+## 📊 Evaluation Metrics
 
-Precision
+### Precision
 
 Measures how many transactions predicted as fraudulent were actually fraudulent.
 
-Recall
+### Recall
 
 Measures how many of the actual fraudulent transactions were successfully detected.
 
-F1-Score
+### F1-Score
 
 Combines precision and recall into a single metric.
 
-ROC-AUC
+### ROC-AUC
 
 Measures how effectively the model distinguishes fraudulent transactions from legitimate ones across different classification thresholds.
 
 ---
 
-💡 Key Insights
+## 💡 Key Insights
 
 - Credit card fraud detection is highly affected by class imbalance.
 - Accuracy alone can give a misleading impression of model performance.
 - Recall is particularly important when the goal is to detect as many fraudulent transactions as possible.
-- The model achieved a high ROC-AUC score of 0.976.
+- The model achieved a high ROC-AUC score of **0.976**.
 - The high recall came with lower precision, showing the trade-off between catching fraud and generating false alerts.
 - Fraud detection systems need to balance model performance with real-world customer and financial considerations.
 
 ---
 
-🚀 Real-World Scalability
+## 🚀 Real-World Scalability
 
 A real-world fraud detection system may need to process a very large number of transactions in a short period of time.
 
@@ -177,23 +186,26 @@ For production use, such a system would need:
 
 ---
 
-📁 Project Files
+## 📁 Project Files
 
+```text
 DataAnalytics-L2-FraudDetection/
 │
 ├── README.md
 ├── Fraud_Detection.ipynb
-├── creditcard.csv
 └── screenshots/
+```
+
+> **Note:** The `creditcard.csv` dataset is not included in the repository because of its large file size. It can be downloaded from the [Kaggle dataset source](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
 
 ---
 
-🎯 Conclusion
+## 🎯 Conclusion
 
-This project demonstrates how machine learning can be applied to credit card fraud detection.
+This project demonstrates how **machine learning can be applied to credit card fraud detection**.
 
 The analysis highlighted the importance of handling class imbalance and using appropriate evaluation metrics instead of relying solely on accuracy.
 
-The Logistic Regression model achieved a 0.90 recall and 0.976 ROC-AUC, showing strong ability to distinguish fraudulent transactions, although its precision indicates that further optimisation would be useful to reduce false alerts.
+The Logistic Regression model achieved a **0.90 recall** and **0.976 ROC-AUC**, showing strong ability to distinguish fraudulent transactions, although its precision indicates that further optimisation would be useful to reduce false alerts.
 
-Overall, the project provided practical experience in imbalanced classification, fraud analytics, model evaluation, and real-world machine learning considerations.
+Overall, the project provided practical experience in **imbalanced classification, fraud analytics, model evaluation, and real-world machine learning considerations**.
